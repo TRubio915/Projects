@@ -1,0 +1,6 @@
+C:\Users\Timothy.Rubio\source\repos\mGPUKDE\x64\Debug\mGPUKDE.exe
+C:\Users\Timothy.Rubio\source\repos\mGPUKDE\x64\Debug\mGPUKDE.pdb
+D:\mGPUKDE_Project\mGPUKDE\x64\Debug\mGPUKDE.exe
+D:\mGPUKDE_Project\mGPUKDE\x64\Debug\mGPUKDE.pdb
+D:\MultiGPUParallelSpatialAdaptiveKDE\mGPUKDE\x64\Debug\mGPUKDE.exe
+D:\MultiGPUParallelSpatialAdaptiveKDE\mGPUKDE\x64\Debug\mGPUKDE.pdb
