@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4002282515982337988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4002282515982337990}
+  - component: {fileID: 4002282515982337991}
+  - component: {fileID: 4002282515828196183}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Game Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4002282515982337990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002282515982337988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 353.5, y: 199, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4002282515982337991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002282515982337988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815b20e10549e94469a0737595b04521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingameMenu: {fileID: 0}
+  saveMenu: {fileID: 0}
+  Inventory: {fileID: 0}
+  camObject: {fileID: 0}
+  upgradeManager: {fileID: 0}
+  throwableIndicator: {fileID: 0}
+  healthBarSlider: {fileID: 0}
+  staminaBarSlider: {fileID: 0}
+  staminaBarWhiteSlider: {fileID: 0}
+  healthBarScript: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  UpgradeList: {fileID: 0}
+  coinsCollected: 0
+  maxCoinsAllowed: 9999
+  coinCount: {fileID: 0}
+  sceneTransition: {fileID: 0}
+  staminaCostToTeleport: 20
+  staminaCostToRun: 0.01
+  staminaRegenSpeed: 3
+  isGameStart: 0
+  isGamePaused: 0
+  healthPotion: {fileID: 4170907122949253636, guid: 578bd799bb3b3054f96062cd16530629,
+    type: 3}
+  saveslotsTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  healthCircleBar: {fileID: 0}
+  isFirstGame: 0
+  tutorialBegin: 1
+  TutorialUIElements: {fileID: 0}
+  KunaiCoolDownTutorial: {fileID: 0}
+--- !u!114 &4002282515828196183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002282515982337988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b6bfbbf16d8644ab126ff3999cff79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnlockedAbilities:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  UnlockScreens:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  EquippedAbilities:
+  - {fileID: 0}
+  - {fileID: 0}
+  MaxEquippedAbilities: 2

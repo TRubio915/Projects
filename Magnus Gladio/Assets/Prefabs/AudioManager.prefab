@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1460214707032971877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460214707032971879}
+  - component: {fileID: 1460214707032971876}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: AudioManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460214707032971879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460214707032971877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 339.78033, y: 32.662025, z: -5.3168206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1460214707032971876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460214707032971877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a233803d1e904514c9ee06241623178e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Run
+    clip: {fileID: 8300000, guid: 78b2fffb18a5fed4dbc3bbcb8444afa3, type: 3}
+    volume: 0.2
+    maxVolume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Attack
+    clip: {fileID: 8300000, guid: 9da185bfdf8d72c44a318dc898e26e29, type: 3}
+    volume: 0.4
+    maxVolume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: AttackHit
+    clip: {fileID: 8300000, guid: 8f5ff072714b95147b6a34cd1d184517, type: 3}
+    volume: 0.46
+    maxVolume: 0.46
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Dead
+    clip: {fileID: 8300000, guid: 44c9000b1c008834bb1690c627326174, type: 3}
+    volume: 0.7
+    maxVolume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 9490b828abb968c4589b85fd2c4b4d84, type: 3}
+    volume: 0.4
+    maxVolume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Throw
+    clip: {fileID: 8300000, guid: e47d7fbe43cf6dd409ef2ffc0f011ade, type: 3}
+    volume: 1
+    maxVolume: 1
+    pitch: 2
+    source: {fileID: 0}
+    loop: 0
+  - name: Teleport
+    clip: {fileID: 8300000, guid: fa2fb90f936251947af31c1aba22f2cc, type: 3}
+    volume: 0.4
+    maxVolume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Retrieve
+    clip: {fileID: 8300000, guid: 95b7a8baf21125e43950023ffb9bb1a6, type: 3}
+    volume: 0.4
+    maxVolume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Ghost
+    clip: {fileID: 8300000, guid: 36b01d691419b0f44a6001d0558ce7af, type: 3}
+    volume: 0.3
+    maxVolume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: SkeletonWalk
+    clip: {fileID: 8300000, guid: eb854eb5f9bcc4f4d8c7289bf3ca8bb3, type: 3}
+    volume: 0
+    maxVolume: 0.2
+    pitch: 0.1
+    source: {fileID: 0}
+    loop: 0
