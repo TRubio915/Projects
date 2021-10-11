@@ -1,0 +1,16 @@
+typedef struct tnode
+{
+  int weight;
+  char character;
+  struct tnode* left;
+  struct tnode* right;
+  struct tnode* parent;
+}huffTree;
+
+huffTree* createFreqTable(char* s);
+huffTree* createHuffmanTree(huffTree* leafNodes);
+void encodeFile(char* s, huffTree* leaves);
+void decodeFile(char* s, huffTree* root);
+
+
+
