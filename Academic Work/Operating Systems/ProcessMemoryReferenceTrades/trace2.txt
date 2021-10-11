@@ -1,0 +1,31 @@
+* trace2.txt - another simple memory trace.
+* No errors or mismatches should occur except as specified in the comments.
+* Set memory size to 1MB
+0f00  800
+
+* Check that memory is initialized to 0
+cba   200000 00000000 00
+
+* Preset all memory
+0030A 200000 0 CB
+
+* Check that memory is initialized to CB
+00CBa 200000 0 cb
+
+* Set some bytes
+301   1f0c00 a0 b1 c2 d3 e4 f5
+30a   4 1f0c07 4b
+
+* Copy some bytes
+31d   2 1f0c0c 1f0c01
+
+* Compare bytes - should be 2 mismatches
+cB1   1f0bff cb a0 b1 c2 d3 e4 f5 aa 4b 4b 4b 4b bb b1 c2 cb
+
+* Compare all memory - should be 12 (decimal) mismatches
+00CBa 200000 0 cB
+
+* Print some bytes
+0004f0  38 1f0be8
+
+* End of trace  

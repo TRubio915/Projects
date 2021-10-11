@@ -1,0 +1,40 @@
+* trace1.txt - simple memory trace.
+* No errors or mismatches should occur except as specified in the comments.
+
+* Set memory size to 143KB (0x23C00 bytes)
+F00   8F
+  
+* Check that all memory is initialized to 0
+cba   23c00 0 00
+
+* Store some bytes and then compare
+301   1F001 12 bc 56 78 9a
+301   1f002 34
+CB1   1f000 00 12 34 56 78 9a 00
+
+* Compare all memory again - should find 5 mismatches
+cba   23c00 0 00
+
+* Try copying data to end of memory and compare it
+031d  5 23bfb 1f001
+00cb1 23bfa 00 12 34 56 78 9a
+
+* Fill some bytes with the same value
+30A   400 2000 AB
+
+* Compare - first and last addresses should be mismatch
+00000cba  402 1fff ab
+
+* Print some data
+4F0   30 1eff0
+
+* Increase the memory size to 144KB (0x24000 bytes)
+00f00 90
+
+* Make sure new memory is set to 0
+CBA   400 23c00 00
+
+* Print some more data
+4f0   30  23bf0
+
+* End of trace

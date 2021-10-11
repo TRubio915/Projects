@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Timothy Rubio
+Lab 1 - COMP3801 Spring 2021
+-->
+<html>
+  <head>
+    <title>Lab 1 - The Basics</title>
+    <link rel="icon" type="image/png" href="COMP3801_RGB_cube.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="Common/webgl-utils-2.js"></script>
+    <script type="text/javascript" src="ColorSquareEvent.js"></script>
+  </head>
+  <body>
+    <div>
+      <input id="gl-canvas-red-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Red <span id="gl-canvas-red-value">0.5</span>
+      <input id="gl-canvas-green-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Green <span id="gl-canvas-green-value">0.5</span>
+      <input id="gl-canvas-blue-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Blue <span id="gl-canvas-blue-value">0.5</span>
+    </div>
+    <canvas id="gl-canvas" width="600" height="600">
+    <!-- The following text is displayed if the browser doesn't support HTML5 canvas -->
+      This browser doesn't support the HTML5 canvas element
+    </canvas>
+    <div>
+      <button id="gl-canvas-reset-button">Reset</button>
+      <button id="gl-canvas-dont-button">Don't!</button>
+    </div>
+    <script type="text/javascript">
+      var square = new ColorSquareEvent("gl-canvas");
+    </script>
+    
+    <div>
+      <input id="gl-canvas2-red-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Red <span id="gl-canvas2-red-value">0.5</span>
+      <input id="gl-canvas2-green-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Green <span id="gl-canvas2-green-value">0.5</span>
+      <input id="gl-canvas2-blue-slider" type="range" min="0.0" max="1.0" step="0.01" value="0.5" />
+      Blue <span id="gl-canvas2-blue-value">0.5</span>
+    </div>
+    <canvas id="gl-canvas2" width="600" height="600">
+    <!-- The following text is displayed if the browser doesn't support HTML5 canvas -->
+      This browser doesn't support the HTML5 canvas element
+    </canvas>
+    <div>
+      <button id="gl-canvas2-reset-button">Reset</button>
+      <button id="gl-canvas2-dont-button">Don't!</button>
+    </div>
+    <script type="text/javascript">
+      var square = new ColorSquareEvent("gl-canvas2");
+    </script>
+  </body>
+</html>
